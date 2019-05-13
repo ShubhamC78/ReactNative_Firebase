@@ -7,8 +7,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.4.0",
+    "@react-native-community/netinfo": "^2.0.10",
     "react": "16.8.3",
-    "react-native": "0.59.8"
+    "react-native": "0.59.8",
+    "react-native-router-flux": "^4.0.6",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.2",
+    "redux-storage": "^4.1.2",
+    "redux-storage-engine-reactnativeasyncstorage": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
