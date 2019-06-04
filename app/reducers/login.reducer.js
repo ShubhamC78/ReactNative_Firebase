@@ -3,6 +3,7 @@ import * as types from '../actions/actionTypes';
 const initialState = {
     root: 'Login',
     screenName: 'Login',
+    name:''
   };
 
   export default function login(state = initialState, action) {
@@ -15,7 +16,7 @@ const initialState = {
         break;
         case types.LOGIN_SUCCESS :{
             return{
-                ...state,name : action.payload
+                ...state, name : action.payload
             }
         }
         default:

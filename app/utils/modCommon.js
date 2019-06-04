@@ -8,7 +8,7 @@ export function log(logType, info) {
     console.log(logType + " : " + info);
 }
 
-export const pushScreen = (props, screenName, params) => {
+export const pushScreen = ( screenName, params) => {
   types.mountedComponents.push(screenName);
   console.log("pushScreen"+screenName);
   Actions.push(screenName, params);

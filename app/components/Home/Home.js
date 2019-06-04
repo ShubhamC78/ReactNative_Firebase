@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View,Button } from 'react-native';
 import * as commonFunctions from '../../utils/modCommon';
 import { connect } from 'react-redux';
 
@@ -13,6 +13,10 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome {this.props.name}</Text>
+        <Button 
+          title="Back"
+          onPress={()=>{this.onPressBack()}}
+        />
       </View>
     );
   }

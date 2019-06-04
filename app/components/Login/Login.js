@@ -1,8 +1,9 @@
 import React from 'react';
-import { Image, View, StyleSheet, Button } from 'react-native';
+import { Image, View, StyleSheet, Button,Platform } from 'react-native';
 import { connect } from 'react-redux';
 import * as loginAction from '../../actions/login.action';
-
+import Actions from 'react-native-router-flux';
+import * as commonFunctions from '../../utils/modCommon';
 
 class Login extends React.Component {
     constructor(props) {
@@ -10,9 +11,13 @@ class Login extends React.Component {
     }
 
     onLoginPress(){
+    
      this.props.dispatch(loginAction.login("Shubham"));
     }
          
+    onPressSignUp(){
+   commonFunctions.pushScreen("CreateAccount");
+    }
     
     render() {
         return (
@@ -27,6 +32,13 @@ class Login extends React.Component {
                         onPress={() => this.onLoginPress()}
                         title="Login"
                         />
+
+                         <Button
+                        color="#7dbb46"
+                        style={{marginTop: 10,}}
+                        onPress={() => this.onPressSignUp()}
+                        title="SignUp"
+                        />
                 </View>
             </View>
         )
@@ -36,7 +48,7 @@ class Login extends React.Component {
 const styles = StyleSheet.create({
     buttonViewStyle: {
         marginTop: 50,
-        backgroundColor: '#7dbb46',
+        backgroundColor: Platform.OS == "ios" ?  "#3e3e3e" : '#7dbb46',
         margin: 40,
         width:100,
         borderRadius: 30,

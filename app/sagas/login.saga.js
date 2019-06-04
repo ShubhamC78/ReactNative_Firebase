@@ -1,15 +1,14 @@
 import { takeLatest, put, call, fork, select } from 'redux-saga/effects'
 import * as types from '../actions/actionTypes';
 import * as common from '../utils/modCommon';
+import Actions from 'react-native-router-flux';
 
 export function* watchLoginRequest(action) {
     yield put({
         type: types.LOGIN_SUCCESS, 
-        payload: action.payload
+        payload: "shubham"
     });
-
-    yield call(common.pushScreen , "test" , "Home" );
-    
+    yield call(common.pushScreen , "Home" );
 }
 
 export default function* root() {
