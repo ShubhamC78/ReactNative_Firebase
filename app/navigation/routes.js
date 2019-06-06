@@ -5,7 +5,7 @@ import Home from '../components/Home/Home';
 import Login from '../components/Login/Login';
 import SignUpView from '../components/Login/SignUpView';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
-
+import DetailScreen from '../components/DetailScreen/DetailScreen';
 
 const Routes = () =>(
     <Router
@@ -32,6 +32,12 @@ const Routes = () =>(
              <Scene
                 key="SignUpView"
                 component={SignUpView}
+                hideNavBar={true}
+                gesturesEnabled={false}
+            />
+              <Scene
+                key="DetailScreen"
+                component={DetailScreen}
                 hideNavBar={true}
                 gesturesEnabled={false}
             />
