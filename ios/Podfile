@@ -6,7 +6,7 @@ target 'Firebase_Auth' do
   # use_frameworks!
 
   # Pods for Firebase_Auth
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth', '~> 5.20.1'
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 

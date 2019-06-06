@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {Scene,Router,Stack,} from 'react-native-router-flux';
 import Home from '../components/Home/Home';
 import Login from '../components/Login/Login';
-import CreateAccount from '../components/Login/CreateAccount';
+import SignUpView from '../components/Login/SignUpView';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
 
 
@@ -30,8 +30,8 @@ const Routes = () =>(
                 gesturesEnabled={false}
             />
              <Scene
-                key="CreateAccount"
-                component={CreateAccount}
+                key="SignUpView"
+                component={SignUpView}
                 hideNavBar={true}
                 gesturesEnabled={false}
             />

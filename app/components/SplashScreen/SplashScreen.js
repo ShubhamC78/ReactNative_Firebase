@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#3e3e3e',
+    backgroundColor: '#DCDCDC',
   },
   stretch: {
-    width: 320,
+    width: 200,
     height: 80
   },
   textStyle:{
